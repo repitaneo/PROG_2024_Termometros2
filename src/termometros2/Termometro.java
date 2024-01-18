@@ -36,6 +36,19 @@ public class Termometro {
 	
 	
 	
+	public int buscar(float valor) {
+
+		int posicion = -1;
+		for (int i = 0; i < temperaturas.length; i++) {
+			if(temperaturas[i]==valor) {
+				posicion = i;
+			}
+		}
+		return posicion;
+	}
+	
+	
+	
 	
 	
 	
