@@ -36,7 +36,7 @@ public class Termometro {
 	
 	
 	
-	public int buscar(float valor) {
+	public int buscarUltimo(float valor) {
 
 		int posicion = -1;
 		for (int i = 0; i < temperaturas.length; i++) {
@@ -49,7 +49,23 @@ public class Termometro {
 	
 	
 	
+	public int buscarPrimero(float valor) {
 	
+		int posicion = -1;
+		
+		int i = 0;
+		boolean encontrado = false;
+		while((i<temperaturas.length)&&(!encontrado)) {
+			
+			if(temperaturas[i]==valor) {
+				
+				posicion = i;
+				encontrado = true;
+			}
+			i++;
+		}
+		return posicion;
+	}
 	
 	
 	

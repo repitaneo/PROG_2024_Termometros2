@@ -6,15 +6,17 @@ public class Start {
 
 		Termometro t = new Termometro();
 		t.add(5);
-		t.add(15);
-		t.add(25);
-		t.add(35);
-		t.add(45);
-		t.add(55);
-		t.add(65);
-		t.add(0);
+		t.add(22);
+		t.add(66);
+		t.add(99);
+		t.add(5);
+		t.add(22);
+		t.add(22);
 		
 		System.out.println(t);
+		System.out.println(t.buscarPrimero(22));
+		System.out.println(t.buscarUltimo(22));
+		System.out.println(t.buscarPrimero(100));
 
 	}
 
