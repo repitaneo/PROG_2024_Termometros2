@@ -69,4 +69,28 @@ public class Termometro {
 	
 	
 	
+	public float getTemperaturaDia(char dia) {
+		
+		switch(dia) {
+		
+			case 'L', 'l': return temperaturas[0];
+			case 'M', 'm': return temperaturas[1];
+			case 'X', 'x': return temperaturas[2];
+			case 'J', 'j': return temperaturas[3];
+			case 'V', 'v': return temperaturas[4];
+			case 'S', 's': return temperaturas[5];
+			case 'D', 'd': return temperaturas[6];
+		}
+		return temperaturas[0];
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
